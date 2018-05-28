@@ -1,0 +1,1163 @@
+body {
+	background-color:skyblue;
+	margin: 0px auto;
+    border: solid 1px;
+}
+
+.pageContents
+{
+   border: solid 1px;
+    width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: snow;
+    
+}
+
+.datePicker{
+    height: 1.5em;
+    background-color: azure;
+    width: auto;
+    font-weight: bold;
+    align-content: center;
+    font-size: 200%; 
+    
+}
+
+.timePicker{
+    height: 1.5em;
+    background-color: azure;
+    width: auto;
+    font-weight: bold;
+    align-content: center;
+    font-size: 200%; 
+    
+}
+
+.locationMenu{
+    height: 1.5em;
+    background-color: azure;
+    width: auto;
+    font-weight: bold;
+    align-content: center;
+    font-size: 200%; 
+    
+}
+
+.incomeTable td
+{
+    font-weight: bold;
+    align-content: center;
+    font-size: 200%;
+    text-align: center;
+    
+}
+
+.socialWelfare td
+{
+    font-weight: bold;
+    align-content: center;
+    font-size: 200%;
+    text-align: center;
+    
+}
+
+.headerLogo 
+{
+    border: solid 1px;
+    align-content: center;
+    border-radius: 25%;
+    
+}
+.pageContents img
+{
+    align-items: center;
+    
+}
+
+
+.menu {
+    grid-area: m;
+    display: flex;
+    flex-direction: row;
+    max-height:10px;
+    min-height: 40px;
+   justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+ 
+}
+
+
+legend
+{
+    font-family: ard;
+    font-size: 300%;
+    color: blue;
+}
+
+.labelHeading
+{
+    font-family: ard;
+    font-size: 120%;
+    color: blue;
+}
+
+.footer
+{
+    font-family: ard;
+    background-color: lightblue;
+    color: dodgerblue;
+    width: 80%;
+       margin-left: auto;
+    margin-right: auto;
+    padding: 80px;
+    
+}
+
+.dacsLogo
+{
+    font-family: ard;
+    font-weight: bold;
+    font-size: 250%;
+    color: dodgerblue;
+    text-align: center;  
+}
+
+.review {
+    grid-area: r;
+    background-color: snow;
+     width: 70% ;
+  margin-left: auto ;
+  margin-right: auto ;
+    padding: 80px;
+}
+
+.cellA{
+    background-color: aqua;
+}
+
+.cellB{
+    background-color: skyblue;
+}
+
+.cellC{
+    background-color: cadetblue;
+}
+
+.bookingsButton{
+    font-weight: bold;
+    font-family: AlteHaasGroteskRegular;
+    background-color: lightgreen;
+    border-radius: 20%;
+    color: dodgerblue;
+    padding: .75em;
+    font-size: 150%;
+}
+
+.iframeDiv{
+    text-align: center;
+}
+
+input[type=text] {
+    border: 2px solid blue;
+    border-radius: 4px;
+    font-size: 30px;
+    
+}
+
+.appointmentDetails
+{
+    text-align: center;
+}
+   h2 {
+    font-family: AlteHaasGroteskRegular;
+    font-size: 150%;
+    color:darkolivegreen;
+    text-align: center;
+}
+
+   h1 {
+    font-family: Arial, Helvetica, sans-serif;
+       font-weight: bold;
+    font-size: 200%;
+    color: forestgreen;
+    text-align: center;
+    }
+
+p, li, th{
+    
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+/* Media Query for 1200 px */ 
+@media only screen and (min-width: 1200px) {
+.contentsPage {
+    height: 80%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(10, 1fr); /* 4 columns, 1fr each */ 
+    grid-template-rows:  .25fr .25fr .25fr 1fr 1fr 1fr .75fr 1fr; /* Dimensions of rows */ 
+    grid-template-areas: 
+        "h h h h h h h h h h h h" /* header */
+        "h h h h h h h h h h h h"
+        "a a r r r r r r r r . ." /* Signin & menu */
+        "a a r r r r r r r r . ." 
+        ". . r r r r r r r r . ." 
+        ". . sr sr sr sr sr sr sr sr sr sr"
+        "f f f f f f f f f f f f"
+}
+ .dropbtn{
+        display:none;
+    }
+    
+ .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+    
+    input[type=text] {
+    border: 2px solid blue;
+    border-radius: 4px;
+    font-size: 30px;
+    
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.overallPage{
+    background-color: dodgerblue;
+     margin: 0px auto;
+}
+    
+    .headerLogo{
+    display: contents;
+}
+    
+    .searchInput{
+        display:contents;
+    }
+
+.pageheader {
+    grid-area: h; /* grid-area aligns to the grid-template-areas above */
+    background-color: black;
+    max-height: 80px;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.topadvert{
+    grid-area:ta;
+}
+
+.aboutUs{
+    grid-area: a;
+    border: double 5px;
+    border-color: red;
+    max-width: 250px;
+}
+    
+ 
+
+@font-face{
+    font-family: ard;
+    src:url(ard.ttf);
+ 
+}
+    
+
+
+.aboutUs > div
+{
+   text-align: center;
+    font-family: "ard";
+    color: red;
+    font-size: 200%;
+ }
+  
+
+.aboutUs > p
+{   display: flex;
+    align-content: center;
+    
+}
+
+.topad{
+    grid-area:t;
+    max-height:auto;
+    max-width:auto;
+}
+
+.signIn{
+   grid-area: s;
+    display: flex;
+    font-family: ard;
+    font-size: 120%;
+    color: red;
+    text-align: center;
+    flex-direction: column;  /* make main axis vertical */
+ 
+    
+}
+    
+    
+    .appointmentDetails{
+        text-align: center;
+    }
+    
+.inputNamePassword 
+{
+        text-align: center;
+    }
+    
+    .button1{
+      font-weight: bold;
+        background-color: lightgreen;
+        border-radius: 20%;
+        font-size: 28px;
+        height: 5em;
+        width:auto;
+        
+    }
+
+.smallReviews{
+    grid-area: sr;
+     display: flex;
+     justify-content: space-between; 
+    
+        background-color: snow;
+     width: 70% ;
+  margin-left: auto ;
+  margin-right: auto ;
+    padding: 80px;
+}
+
+.albumArtSr
+{
+     max-height: 120px;
+    max-width: 120px;
+}
+
+    .reviewHeading{
+        text-align: center;
+        font-family: ard;
+        color: red;
+        font-size: 125%
+    }
+.srArtist {
+    text-align: center;
+    font-style: italic;
+    font-size:110%;
+}
+
+.srTitle
+{ text-align: center;
+    font-family: ardTwo;
+    color: forestgreen;
+    font-size: 125%;;
+}
+.menu {
+    grid-area: m;
+    display: flex;
+    flex-direction: row;
+    max-height:10px;
+    min-height: 40px;
+   justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+ 
+}
+
+
+    
+.footer {
+    /*grid-area: f;*/
+    border: 1px solid;
+    background-color: black;
+    max-height: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around; /* Crucial if we want on one line */
+      
+}
+
+
+
+.reviewParagraph
+{
+  text-align: justify;  
+    
+}
+.albumArtist
+    {
+        
+    font-size: 125%;
+    font-family: "Times New Roman" Times serif;
+    }
+
+
+
+.author
+{
+    font-size: 125%;
+    
+}
+
+
+
+.summary
+{
+    font-style: italic;
+}
+
+.genre
+{
+    font-size: 110%;
+    font-family:sans-serif;
+    font: "Times New Roman";
+    
+}
+}
+
+/* Media Query for 540 px */ 
+@media only screen and (max-width: 540px) {
+.contentsPage {
+    height: 80%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns, 1fr each */ 
+    grid-template-rows: .05fr .05fr .05fr .75fr .10fr; /* Dimensions of rows */ 
+    grid-template-areas: 
+        "h h h h h h h h" 
+        "ta ta ta ta ta ta ta ta"
+        " . . d d . . . . "
+        "r r r r r r r r"
+        "sr sr sr sr sr sr sr sr"
+        
+       
+}
+    
+    
+    .dropdown{
+        grid-area: d;
+        display:contents;
+        
+    }
+    
+   
+
+.overallPage{
+    background-color: beige;
+    margin: 5px auto;
+}
+
+.pageheader {
+    grid-area: h; /* grid-area aligns to the grid-template-areas above */
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;  
+}
+    
+   
+    
+.headerLogo{
+    display: none;
+    
+}
+    
+    .searchInput{
+        background-color: black
+    }
+
+.topadvert{
+    grid-area:ta;
+    
+}
+
+    .topadvert > img{
+        max-height: 400px;
+        max-width: 450px;
+    }
+.aboutUs{
+    grid-area: a;
+    border: double 5px;
+    border-color: red;
+    max-width: 250px;
+}
+
+@font-face{
+    font-family: ard;
+    src:url(ard.ttf);
+ 
+}
+    .aboutUs{
+        display:none;
+    }
+.aboutUs > div
+{
+   
+    text-align: center;
+    font-family: "ard";
+    color: red;
+    font-size: 200%;
+    
+    
+}
+
+.aboutUs > p
+{   display: flex;
+    align-content: center;
+    
+}
+
+.topad{
+    grid-area:t;
+    max-height:auto;
+    max-width:auto;
+}
+
+.signIn{
+   grid-area: s;
+    display: flex;
+    text-align: center;
+    flex-direction: column;  /* make main axis vertical */
+ 
+    
+}
+    
+.smallReviews{
+    grid-area: sr;
+     display: flex;
+     justify-content:space-between; 
+}
+
+.albumArtSr
+{
+     max-height: 120px;
+    max-width: 120px;
+}
+
+.srArtist {
+    text-align: center;
+    font-style: italic;
+    font-size:110%;
+}
+
+.srTitle
+{ text-align: center;
+    font-family: ard;
+    color: red;
+    font-size: 125%;;
+}
+
+
+.review {
+    grid-area: r;
+    min-width: 300px
+    
+   
+}
+
+.pagefooter {
+    grid-area: f;
+    background-color: black;
+    max-height: 20px;
+    min-height: 20px;
+    display: flex;
+    justify-content: flex-start; /* Crucial if we want on one line */
+      
+}
+  
+    
+    .headerLogo{
+        display:none;
+    }
+    .footerIcon{
+        display:none;
+    }
+     .signIn, .headerLogo{
+        display:none;
+    }
+  .footerAdvert
+    { display:none;
+       
+    }
+
+
+
+.reviewParagraph
+{
+  text-align: justify;  
+    
+}
+.albumArtist
+    {
+        
+    font-size: 105%;
+    font-family: "Times New Roman" Times serif;
+    }
+
+
+
+.author
+{
+    font-size: 105%;
+    
+}
+
+    
+    .albumArtSr{
+        max-height: 60px;
+        max-width: 60px;
+    }
+  
+
+    
+/*.albumSrImg3{
+ display: none;
+}
+    
+    
+.srAlbumTitle3
+ {
+  display: none;
+} */
+
+.summary
+{
+    font-style: italic;
+}
+
+.genre
+{
+    font-size: 90%;
+    font-family:sans-serif;
+    font: "Times New Roman";
+    
+}
+}
+
+/* Media Query for 800 px */
+@media only screen and (max-width: 800px) {
+.contentsPage {
+    height: 80%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns, 1fr each */ 
+    grid-template-rows: .05fr .05fr .05fr .75fr .10fr; /* Dimensions of rows */ 
+    grid-template-areas: 
+        "h h h h h h h h" 
+       "m m m m m m d d"
+        "ta ta ta ta ta ta ta ta"
+        "r r r r r r r r"
+        "sr sr sr sr sr sr sr sr"
+        
+       
+}
+    
+    
+    .dropdown{
+        grid-area: d;
+        display:contents;
+        
+    }
+    
+   
+
+.overallPage{
+    background-color: beige;
+    margin: 5px auto;
+}
+
+.pageheader {
+    grid-area: h; /* grid-area aligns to the grid-template-areas above */
+    background-color: black;
+ 
+    display: flex;
+    justify-content: flex-start;  
+}
+    
+   
+    
+.headerLogo{
+    display: none;
+    
+}
+    
+    .searchInput{
+        background-color: black
+    }
+
+.topadvert{
+    grid-area:ta;
+    
+}
+
+    .topadvert > img{
+        max-height: 400px;
+        max-width: 450px;
+    }
+.aboutUs{
+    grid-area: a;
+    border: double 5px;
+    border-color: red;
+    max-width: 250px;
+}
+
+@font-face{
+    font-family: ard;
+    src:url(ard.ttf);
+ 
+}
+    .aboutUs{
+        display:none;
+    }
+.aboutUs > div
+{
+   
+    text-align: center;
+    font-family: "ard";
+    color: red;
+    font-size: 200%;
+    
+    
+}
+
+.aboutUs > p
+{   display: flex;
+    align-content: center;
+    
+}
+
+.topad{
+    grid-area:t;
+    max-height:auto;
+    max-width:auto;
+}
+
+.signIn{
+   display: none;
+ 
+    
+}
+    
+.smallReviews{
+    grid-area: sr;
+     display: flex;
+     justify-content:space-between; 
+}
+
+.albumArtSr
+{
+     max-height: 120px;
+    max-width: 120px;
+}
+
+.srArtist {
+    text-align: center;
+    font-style: italic;
+    font-size:110%;
+}
+
+.srTitle
+{ text-align: center;
+    font-family: ard;
+    color: red;
+    font-size: 125%;;
+}
+
+
+.review {
+    grid-area: r;
+    min-width: 300px
+    
+   
+}
+
+.pagefooter {
+    grid-area: f;
+    background-color: black;
+    max-height: 20px;
+    min-height: 20px;
+    display: flex;
+    justify-content: flex-start; /* Crucial if we want on one line */
+      
+}
+  
+    
+    .headerLogo{
+        display:none;
+    }
+    .footerIcon{
+        display:none;
+    }
+     .signIn, .headerLogo{
+        display:none;
+    }
+  .footerAdvert
+    { display:none;
+       
+    }
+
+
+.reviewParagraph
+{
+  text-align: justify;  
+    
+}
+.albumArtist
+    {
+        
+    font-size: 105%;
+    font-family: "Times New Roman" Times serif;
+    }
+
+
+
+.author
+{
+    font-size: 105%;
+    
+}
+
+    
+    .albumArtSr{
+        max-height: 60px;
+        max-width: 60px;
+    }
+  
+
+    
+/*.albumSrImg3{
+ display: none;
+}
+    
+    
+.srAlbumTitle3
+ {
+  display: none;
+} */
+
+.summary
+{
+    font-style: italic;
+}
+
+.genre
+{
+    font-size: 90%;
+    font-family:sans-serif;
+    font: "Times New Roman";
+    
+}
+}
+
+/* Media Query for 380 px */
+@media only screen and (max-width: 380px) {
+.contentsPage {
+    height: 80%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns, 1fr each */ 
+    grid-template-rows: .05fr .05fr .75fr .10fr; /* Dimensions of rows */ 
+    grid-template-areas: 
+        "h h h h h h h h" 
+        ". . . . . . d d"
+        "r r r r r r r r"
+        "sr sr sr sr sr sr sr sr"
+        
+       
+}
+    
+    
+    .dropdown{
+        grid-area: d;
+        display:contents;
+    }
+    
+   
+
+.overallPage{
+    background-color: beige;
+    margin: 0px auto;
+}
+
+.pageheader {
+    grid-area: h; /* grid-area aligns to the grid-template-areas above */
+    background-color: black;
+    max-height: 80px;
+    min-height: 80px;
+    display: flex;
+    justify-content: flex-start;  
+}
+    
+.headerLogo{
+    display: none;
+}
+    
+    .searchInput{
+        display:none;
+    }
+
+.topadvert{
+    grid-area:ta;
+}
+
+.aboutUs{
+    grid-area: a;
+    border: double 5px;
+    border-color: red;
+    max-width: 250px;
+}
+
+@font-face{
+    font-family: ard;
+    src:url(ard.ttf);
+ 
+}
+    .aboutUs{
+        display:none;
+    }
+.aboutUs > div
+{
+   
+    text-align: center;
+    font-family: "ard";
+    color: red;
+    font-size: 200%;
+    
+    
+}
+
+.aboutUs > p
+{   display: flex;
+    align-content: center;
+    
+}
+
+.topad{
+    grid-area:t;
+    max-height:auto;
+    max-width:auto;
+}
+
+.signIn{
+   grid-area: s;
+    display: flex;
+    text-align: center;
+    flex-direction: column;  /* make main axis vertical */
+ 
+    
+}
+    
+.smallReviews{
+    grid-area: sr;
+     display: flex;
+     justify-content:space-between; 
+}
+
+.albumArtSr
+{
+     max-height: 120px;
+    max-width: 120px;
+}
+
+.srArtist {
+    text-align: center;
+    font-style: italic;
+    font-size:110%;
+}
+
+.srTitle
+{ text-align: center;
+    font-family: ard;
+    color: red;
+    font-size: 125%;;
+}
+
+
+.review {
+    grid-area: r;
+    min-width: 300px
+    
+   
+}
+
+.pagefooter {
+    grid-area: f;
+    background-color: black;
+    max-height: 20px;
+    min-height: 20px;
+    display: flex;
+    justify-content: flex-start; /* Crucial if we want on one line */
+      
+}
+  
+    
+    .headerLogo{
+        display:none;
+    }
+    .footerIcon{
+        display:none;
+    }
+     .signIn, .headerLogo{
+        display:none;
+    }
+  .footerAdvert
+    { display:none;
+       
+    }
+.topadvert{
+        display:none;
+    }
+
+
+.reviewParagraph
+{
+  text-align: justify;  
+    
+}
+.albumArtist
+    {
+        
+    font-size: 105%;
+    font-family: "Times New Roman" Times serif;
+    }
+
+
+
+.author
+{
+    font-size: 105%;
+    
+}
+
+    
+    .albumArtSr{
+        max-height: 60px;
+        max-width: 60px;
+    }
+  
+
+    
+.albumSrImg3{
+ display: none;
+}
+    
+    
+.srAlbumTitle3
+ {
+  display: none;
+}
+
+.summary
+{
+    font-style: italic;
+}
+
+.genre
+{
+    font-size: 90%;
+    font-family:sans-serif;
+    font: "Times New Roman";
+    
+}
+}
+
+.otrText{
+    font-family: ard;
+    font-size: 130%;
+    color: red;
+}
+nav li {
+    list-style-type: none;
+    margin: 1px;
+    padding: 2px;
+    text-align: center;
+    font-size: 160%;
+    color: blue;
+    display:inline;
+    background-color:white;
+    width:150px;
+    height:180px;
+    border:solid black 1px;
+}
+
+nav li.currentPage 
+{ 
+    background-color:dodgerblue;
+    color: forestgreen;
+}
+
+
+
+a:link 
+{ color:crimson;}
+a:visited 
+{ color:forestgreen;}
+a:hover 
+{ color:orange;}
+a:active 
+{ color:white;}
+
+
+.dropbtn {
+    background-color: red;
+    color: black;
+    font-family: ard;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration:none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: red;
+text-decoration:underline;}
+
+.show {display:block;}
+
+

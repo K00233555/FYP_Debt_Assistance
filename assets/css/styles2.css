@@ -1,0 +1,151 @@
+.contentsPage {
+    height: 80%;
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(10, 1fr); /* 4 columns, 1fr each */ 
+    grid-template-rows:  .75fr .5fr .5fr 4fr 1fr .5fr 1fr; /* Dimensions of rows */ 
+    grid-template-areas: 
+        "h h h h h h h h h h h h" /* header */
+        ". . ta ta ta ta ta ta ta ta . ."
+        ". . m m m m m m m m . ." /* Signin & menu */
+        "s s r r r r r r r r a a" 
+        "s s r r r r r r r r . ."
+        "sr sr sr sr sr sr sr sr sr sr sr sr"
+        "f f f f f f f f f f f f"
+}
+
+.pageheader {
+    grid-area: h; /* grid-area aligns to the grid-template-areas above */
+    background-color: black;
+       max-height: 100px;
+    min-height: 100px;
+    
+}
+
+.topadvert{
+    grid-area:ta;
+}
+
+.aboutUs{
+    grid-area: a;
+}
+
+.topad{
+    grid-area:t;
+}
+
+.signin{
+   grid-area: s; 
+}
+
+.smallreviews{
+    grid-area: sr;
+}
+
+.menu {
+    
+    grid-area: m;
+}
+
+.review {
+    grid-area: r;
+   
+}
+
+.pagefooter {
+    grid-area: f;
+    background-color: black;
+    max-height: 120px;
+    min-height: 10px;
+    display: flex;
+    justify-content: space-around; /* Crucial if we want on one line */
+ }
+
+.pagefooter > div
+{   
+    
+ 
+}
+
+.footerAdvert > img
+{ 
+}
+
+.footerIcon
+{
+    
+    
+}
+
+.pagefooter > div
+{
+    
+    
+}
+
+
+nav li {
+    list-style-type: none;
+    margin: 1px;
+    padding: 2px;
+    text-align: center;
+    font-size: 130%;
+    color: red;
+    display:inline;
+    background-color:black;
+    width:130px;
+    height:130px;
+  border:solid black 1px;
+}
+
+nav li.currentPage 
+{ 
+    background-color:red;
+    color: black;
+}
+a:link 
+{ color:crimson;}
+a:visited 
+{ color:forestgreen;}
+a:hover 
+{ color:orange;}
+a:active 
+{ color:white;}
+
+
+body {
+    background-color: moccasin;
+}
+
+
+
+.reviewParagraph
+{
+  text-align: justify;  
+    
+}
+.albumArtist
+    {
+    font-size: 125%;
+    font-family: "Times New Roman", Times, serif;
+    }
+
+.albumTitle
+    {
+    font-size: 115%;
+    
+    }
+
+.summary
+{
+    font-style: italic;
+}
+.genre
+{
+    font-weight: bold;
+}
+
+.reviewParagraph
+{
+    text-align:justify;
+}

@@ -1,0 +1,982 @@
+body {
+	background-color:beige;
+	margin: 0px auto;
+}
+
+.pageContents
+{
+   border: solid 1px;
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    
+}
+
+.pageContents img
+{
+    align-items: center;
+    
+}
+.review{
+    text-align: center
+}
+
+.menu {
+    grid-area: m;
+    display: flex;
+    flex-direction: row;
+    max-height:10px;
+    min-height: 40px;
+   justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+ 
+}
+
+
+legend
+{
+    font-family: ard;
+    font-size: 300%;
+    color: blue;
+}
+
+.labelHeading
+{
+    font-family: ard;
+    font-size: 120%;
+    color: blue;
+}
+
+#footer
+{
+    font-family: ard;
+    background-color: lightblue;
+    color: dodgerblue;
+    
+}
+
+   h1 {
+    font-family: ard;
+    font-size: 200%;
+    color: red;
+    text-align: center;
+    }
+
+/* Media Query for 1200 px */ 
+@media only screen and (min-width: 1200px) {
+.contentsPage {
+    height: 80%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(10, 1fr); /* 4 columns, 1fr each */ 
+    grid-template-rows:  .25fr .25fr .25fr 1.5fr 2fr 1fr .75fr 1fr; /* Dimensions of rows */ 
+    grid-template-areas: 
+        "h h h h h h h h h h h h" /* header */
+        ". ta ta ta ta ta ta ta ta ta ta ."
+        "s . . m m m m m m . . ." /* Signin & menu */
+        ". r r r r r r r r r a a" 
+        ". r r r r r r r r r . ." 
+        ". . sr sr sr sr sr sr sr sr sr sr"
+        "f f f f f f f f f f f f"
+}
+ .dropbtn{
+        display:none;
+    }
+    
+ 
+.overallPage{
+    background-color: beige;
+     margin: 0px auto;
+}
+    
+    .headerLogo{
+    display: contents;
+}
+    
+    .searchInput{
+        display:contents;
+    }
+
+.pageheader {
+    grid-area: h; /* grid-area aligns to the grid-template-areas above */
+    background-color: black;
+    max-height: 80px;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.topadvert{
+    grid-area:ta;
+}
+
+.aboutUs{
+    grid-area: a;
+    border: double 5px;
+    border-color: red;
+    max-width: 250px;
+}
+    
+ 
+
+@font-face{
+    font-family: ard;
+    src:url(ard.ttf);
+ 
+}
+    
+
+
+.aboutUs > div
+{
+   text-align: center;
+    font-family: "ard";
+    color: red;
+    font-size: 200%;
+ }
+  
+
+.aboutUs > p
+{   display: flex;
+    align-content: center;
+    
+}
+
+.topad{
+    grid-area:t;
+    max-height:auto;
+    max-width:auto;
+}
+
+.signIn{
+   grid-area: s;
+    display: flex;
+    font-family: ard;
+    font-size: 120%;
+    color: red;
+    text-align: center;
+    flex-direction: column;  /* make main axis vertical */
+ 
+    
+}
+
+.smallReviews{
+    grid-area: sr;
+     display: flex;
+     justify-content: space-between; 
+}
+
+.albumArtSr
+{
+     max-height: 120px;
+    max-width: 120px;
+}
+
+    .reviewHeading{
+        text-align: center;
+        font-family: ard;
+        color: red;
+        font-size: 125%
+    }
+.srArtist {
+    text-align: center;
+    font-style: italic;
+    font-size:110%;
+}
+
+.srTitle
+{ text-align: center;
+    font-family: ard;
+    color: red;
+    font-size: 125%;;
+}
+.menu {
+    grid-area: m;
+    display: flex;
+    flex-direction: row;
+    max-height:10px;
+    min-height: 40px;
+   justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+ 
+}
+
+.review {
+    grid-area: r;
+    
+   
+}
+.footer {
+    /*grid-area: f;*/
+    background-color: black;
+    max-height: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around; /* Crucial if we want on one line */
+      
+}
+
+
+
+.reviewParagraph
+{
+  text-align: justify;  
+    
+}
+.albumArtist
+    {
+        
+    font-size: 125%;
+    font-family: "Times New Roman" Times serif;
+    }
+
+
+
+.author
+{
+    font-size: 125%;
+    
+}
+
+
+
+.summary
+{
+    font-style: italic;
+}
+
+.genre
+{
+    font-size: 110%;
+    font-family:sans-serif;
+    font: "Times New Roman";
+    
+}
+}
+
+/* Media Query for 540 px */ 
+@media only screen and (max-width: 540px) {
+.contentsPage {
+    height: 80%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns, 1fr each */ 
+    grid-template-rows: .05fr .05fr .05fr .75fr .10fr; /* Dimensions of rows */ 
+    grid-template-areas: 
+        "h h h h h h h h" 
+        "ta ta ta ta ta ta ta ta"
+        " . . d d . . . . "
+        "r r r r r r r r"
+        "sr sr sr sr sr sr sr sr"
+        
+       
+}
+    
+    
+    .dropdown{
+        grid-area: d;
+        display:contents;
+        
+    }
+    
+   
+
+.overallPage{
+    background-color: beige;
+    margin: 5px auto;
+}
+
+.pageheader {
+    grid-area: h; /* grid-area aligns to the grid-template-areas above */
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;  
+}
+    
+   
+    
+.headerLogo{
+    display: none;
+    
+}
+    
+    .searchInput{
+        background-color: black
+    }
+
+.topadvert{
+    grid-area:ta;
+    
+}
+
+    .topadvert > img{
+        max-height: 400px;
+        max-width: 450px;
+    }
+.aboutUs{
+    grid-area: a;
+    border: double 5px;
+    border-color: red;
+    max-width: 250px;
+}
+
+@font-face{
+    font-family: ard;
+    src:url(ard.ttf);
+ 
+}
+    .aboutUs{
+        display:none;
+    }
+.aboutUs > div
+{
+   
+    text-align: center;
+    font-family: "ard";
+    color: red;
+    font-size: 200%;
+    
+    
+}
+
+.aboutUs > p
+{   display: flex;
+    align-content: center;
+    
+}
+
+.topad{
+    grid-area:t;
+    max-height:auto;
+    max-width:auto;
+}
+
+.signIn{
+   grid-area: s;
+    display: flex;
+    text-align: center;
+    flex-direction: column;  /* make main axis vertical */
+ 
+    
+}
+    
+.smallReviews{
+    grid-area: sr;
+     display: flex;
+     justify-content:space-between; 
+}
+
+.albumArtSr
+{
+     max-height: 120px;
+    max-width: 120px;
+}
+
+.srArtist {
+    text-align: center;
+    font-style: italic;
+    font-size:110%;
+}
+
+.srTitle
+{ text-align: center;
+    font-family: ard;
+    color: red;
+    font-size: 125%;;
+}
+
+
+.review {
+    grid-area: r;
+    min-width: 300px
+    
+   
+}
+
+.pagefooter {
+    grid-area: f;
+    background-color: black;
+    max-height: 20px;
+    min-height: 20px;
+    display: flex;
+    justify-content: flex-start; /* Crucial if we want on one line */
+      
+}
+  
+    
+    .headerLogo{
+        display:none;
+    }
+    .footerIcon{
+        display:none;
+    }
+     .signIn, .headerLogo{
+        display:none;
+    }
+  .footerAdvert
+    { display:none;
+       
+    }
+
+
+
+.reviewParagraph
+{
+  text-align: justify;  
+    
+}
+.albumArtist
+    {
+        
+    font-size: 105%;
+    font-family: "Times New Roman" Times serif;
+    }
+
+
+
+.author
+{
+    font-size: 105%;
+    
+}
+
+    
+    .albumArtSr{
+        max-height: 60px;
+        max-width: 60px;
+    }
+  
+
+    
+/*.albumSrImg3{
+ display: none;
+}
+    
+    
+.srAlbumTitle3
+ {
+  display: none;
+} */
+
+.summary
+{
+    font-style: italic;
+}
+
+.genre
+{
+    font-size: 90%;
+    font-family:sans-serif;
+    font: "Times New Roman";
+    
+}
+}
+
+/* Media Query for 800 px */
+@media only screen and (max-width: 800px) {
+.contentsPage {
+    height: 80%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns, 1fr each */ 
+    grid-template-rows: .05fr .05fr .05fr .75fr .10fr; /* Dimensions of rows */ 
+    grid-template-areas: 
+        "h h h h h h h h" 
+       "m m m m m m d d"
+        "ta ta ta ta ta ta ta ta"
+        "r r r r r r r r"
+        "sr sr sr sr sr sr sr sr"
+        
+       
+}
+    
+    
+    .dropdown{
+        grid-area: d;
+        display:contents;
+        
+    }
+    
+   
+
+.overallPage{
+    background-color: beige;
+    margin: 5px auto;
+}
+
+.pageheader {
+    grid-area: h; /* grid-area aligns to the grid-template-areas above */
+    background-color: black;
+ 
+    display: flex;
+    justify-content: flex-start;  
+}
+    
+   
+    
+.headerLogo{
+    display: none;
+    
+}
+    
+    .searchInput{
+        background-color: black
+    }
+
+.topadvert{
+    grid-area:ta;
+    
+}
+
+    .topadvert > img{
+        max-height: 400px;
+        max-width: 450px;
+    }
+.aboutUs{
+    grid-area: a;
+    border: double 5px;
+    border-color: red;
+    max-width: 250px;
+}
+
+@font-face{
+    font-family: ard;
+    src:url(ard.ttf);
+ 
+}
+    .aboutUs{
+        display:none;
+    }
+.aboutUs > div
+{
+   
+    text-align: center;
+    font-family: "ard";
+    color: red;
+    font-size: 200%;
+    
+    
+}
+
+.aboutUs > p
+{   display: flex;
+    align-content: center;
+    
+}
+
+.topad{
+    grid-area:t;
+    max-height:auto;
+    max-width:auto;
+}
+
+.signIn{
+   display: none;
+ 
+    
+}
+    
+.smallReviews{
+    grid-area: sr;
+     display: flex;
+     justify-content:space-between; 
+}
+
+.albumArtSr
+{
+     max-height: 120px;
+    max-width: 120px;
+}
+
+.srArtist {
+    text-align: center;
+    font-style: italic;
+    font-size:110%;
+}
+
+.srTitle
+{ text-align: center;
+    font-family: ard;
+    color: red;
+    font-size: 125%;;
+}
+
+
+.review {
+    grid-area: r;
+    min-width: 300px
+    
+   
+}
+
+.pagefooter {
+    grid-area: f;
+    background-color: black;
+    max-height: 20px;
+    min-height: 20px;
+    display: flex;
+    justify-content: flex-start; /* Crucial if we want on one line */
+      
+}
+  
+    
+    .headerLogo{
+        display:none;
+    }
+    .footerIcon{
+        display:none;
+    }
+     .signIn, .headerLogo{
+        display:none;
+    }
+  .footerAdvert
+    { display:none;
+       
+    }
+
+
+.reviewParagraph
+{
+  text-align: justify;  
+    
+}
+.albumArtist
+    {
+        
+    font-size: 105%;
+    font-family: "Times New Roman" Times serif;
+    }
+
+
+
+.author
+{
+    font-size: 105%;
+    
+}
+
+    
+    .albumArtSr{
+        max-height: 60px;
+        max-width: 60px;
+    }
+  
+
+    
+/*.albumSrImg3{
+ display: none;
+}
+    
+    
+.srAlbumTitle3
+ {
+  display: none;
+} */
+
+.summary
+{
+    font-style: italic;
+}
+
+.genre
+{
+    font-size: 90%;
+    font-family:sans-serif;
+    font: "Times New Roman";
+    
+}
+}
+
+/* Media Query for 380 px */
+@media only screen and (max-width: 380px) {
+.contentsPage {
+    height: 80%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns, 1fr each */ 
+    grid-template-rows: .05fr .05fr .75fr .10fr; /* Dimensions of rows */ 
+    grid-template-areas: 
+        "h h h h h h h h" 
+        ". . . . . . d d"
+        "r r r r r r r r"
+        "sr sr sr sr sr sr sr sr"
+        
+       
+}
+    
+    
+    .dropdown{
+        grid-area: d;
+        display:contents;
+    }
+    
+   
+
+.overallPage{
+    background-color: beige;
+    margin: 0px auto;
+}
+
+.pageheader {
+    grid-area: h; /* grid-area aligns to the grid-template-areas above */
+    background-color: black;
+    max-height: 80px;
+    min-height: 80px;
+    display: flex;
+    justify-content: flex-start;  
+}
+    
+.headerLogo{
+    display: none;
+}
+    
+    .searchInput{
+        display:none;
+    }
+
+.topadvert{
+    grid-area:ta;
+}
+
+.aboutUs{
+    grid-area: a;
+    border: double 5px;
+    border-color: red;
+    max-width: 250px;
+}
+
+@font-face{
+    font-family: ard;
+    src:url(ard.ttf);
+ 
+}
+    .aboutUs{
+        display:none;
+    }
+.aboutUs > div
+{
+   
+    text-align: center;
+    font-family: "ard";
+    color: red;
+    font-size: 200%;
+    
+    
+}
+
+.aboutUs > p
+{   display: flex;
+    align-content: center;
+    
+}
+
+.topad{
+    grid-area:t;
+    max-height:auto;
+    max-width:auto;
+}
+
+.signIn{
+   grid-area: s;
+    display: flex;
+    text-align: center;
+    flex-direction: column;  /* make main axis vertical */
+ 
+    
+}
+    
+.smallReviews{
+    grid-area: sr;
+     display: flex;
+     justify-content:space-between; 
+}
+
+.albumArtSr
+{
+     max-height: 120px;
+    max-width: 120px;
+}
+
+.srArtist {
+    text-align: center;
+    font-style: italic;
+    font-size:110%;
+}
+
+.srTitle
+{ text-align: center;
+    font-family: ard;
+    color: red;
+    font-size: 125%;;
+}
+
+
+.review {
+    grid-area: r;
+    min-width: 300px
+    
+   
+}
+
+.pagefooter {
+    grid-area: f;
+    background-color: black;
+    max-height: 20px;
+    min-height: 20px;
+    display: flex;
+    justify-content: flex-start; /* Crucial if we want on one line */
+      
+}
+  
+    
+    .headerLogo{
+        display:none;
+    }
+    .footerIcon{
+        display:none;
+    }
+     .signIn, .headerLogo{
+        display:none;
+    }
+  .footerAdvert
+    { display:none;
+       
+    }
+.topadvert{
+        display:none;
+    }
+
+
+.reviewParagraph
+{
+  text-align: justify;  
+    
+}
+.albumArtist
+    {
+        
+    font-size: 105%;
+    font-family: "Times New Roman" Times serif;
+    }
+
+
+
+.author
+{
+    font-size: 105%;
+    
+}
+
+    
+    .albumArtSr{
+        max-height: 60px;
+        max-width: 60px;
+    }
+  
+
+    
+.albumSrImg3{
+ display: none;
+}
+    
+    
+.srAlbumTitle3
+ {
+  display: none;
+}
+
+.summary
+{
+    font-style: italic;
+}
+
+.genre
+{
+    font-size: 90%;
+    font-family:sans-serif;
+    font: "Times New Roman";
+    
+}
+}
+
+.otrText{
+    font-family: ard;
+    font-size: 130%;
+    color: red;
+}
+nav li {
+    list-style-type: none;
+    margin: 1px;
+    padding: 2px;
+    text-align: center;
+    font-size: 160%;
+    color: red;
+    display:inline;
+    background-color:black;
+    width:150px;
+    height:180px;
+    border:solid black 1px;
+}
+
+nav li.currentPage 
+{ 
+    background-color:red;
+    color: black;
+}
+
+
+
+a:link 
+{ color:crimson;}
+a:visited 
+{ color:forestgreen;}
+a:hover 
+{ color:orange;}
+a:active 
+{ color:white;}
+
+
+.dropbtn {
+    background-color: red;
+    color: black;
+    font-family: ard;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration:none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: red;
+text-decoration:underline;}
+
+.show {display:block;}
+
+
